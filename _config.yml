@@ -1,79 +1,122 @@
-# Where things are
-source              : .
-destination         : ./_site
-collections_dir     : .
-plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
-layouts_dir         : _layouts
-data_dir            : _data
-includes_dir        : _includes
+title: Obsidian Notes
+author: Alan Mett
+email: kgarg8@uic.edu
+description: > # this means to ignore newlines until "show_exerpts:"
+  Politeness related Text-Style-Transfer
+show_excerpts: true # set to true to show excerpts on the homepage
+baseurl:
+
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 sass:
   sass_dir: _sass
-collections:
-  posts:
-    output          : true
+
+permalink: /:title/
+texture:
+  title: Alan Mett
+  tagline: Just dev
+  date_format: "%b %-d, %Y"
+  style: black
+  showNav: false
+  # showPicker: true
+
+  # generate social links in footer
+  social_links:
+    # twitter: 
+    github:  kgarg8
+    # linkedIn: in/
+    # rss: rss
+ 
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+header_pages:
+- index.md
+
+# Build settings
+remote_theme: samarsault/texture
+
+plugins:
+- jekyll-seo-tag
+- jekyll-feed
+- jekyll-remote-theme
+
+# Where things are
+#source              : .
+#destination         : ./_site
+#collections_dir     : .
+#plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
+#layouts_dir         : _layouts
+#data_dir            : _data
+#includes_dir        : _includes
+#sass:
+#  sass_dir: _sass
+#collections:
+#  posts:
+#    output          : true
 
 # Handling Reading
-safe                : false
-include             : [".htaccess"]
-exclude             : ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
-keep_files          : [".git", ".svn"]
-encoding            : "utf-8"
-markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
-strict_front_matter : false
+#safe                : false
+#include             : [".htaccess"]
+#exclude             : ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
+#keep_files          : [".git", ".svn"]
+#encoding            : "utf-8"
+#markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
+#strict_front_matter : false
 
 # Filtering Content
-show_drafts         : null
-limit_posts         : 0
-future              : false
-unpublished         : false
+#show_drafts         : null
+#limit_posts         : 0
+#future              : false
+#unpublished         : false
 
 # Plugins
-whitelist           : []
-plugins             : [jekyll-remote-theme]
+#whitelist           : []
+#plugins             : [jekyll-remote-theme]
 
-remote_theme: jekyll/minima
+#remote_theme: jekyll/minima
 
-minima:
-  skin: dark
+#minima:
+#  skin: dark
 
 # Conversion
-markdown            : kramdown
-highlighter         : rouge
-lsi                 : false
-excerpt_separator   : "\n\n"
-incremental         : false
+#markdown            : kramdown
+#highlighter         : rouge
+#lsi                 : false
+#excerpt_separator   : "\n\n"
+#incremental         : false
 
 # Serving
-detach              : false
-port                : 4000
-host                : 127.0.0.1
-baseurl             : "" # does not include hostname
-show_dir_listing    : false
+#detach              : false
+#port                : 4000
+#host                : 127.0.0.1
+#baseurl             : "" # does not include hostname
+#show_dir_listing    : false
 
 # Outputting
-permalink           : date
-paginate_path       : /page:num
-timezone            : null
+#permalink           : date
+#paginate_path       : /page:num
+#timezone            : null
 
-quiet               : false
-verbose             : false
-defaults            : []
+#quiet               : false
+#verbose             : false
+#defaults            : []
 
-liquid:
-  error_mode        : warn
-  strict_filters    : false
-  strict_variables  : false
+#liquid:
+#  error_mode        : warn
+#  strict_filters    : false
+#  strict_variables  : false
 
 # Markdown Processors
-kramdown:
-  auto_ids          : true
-  entity_output     : as_char
-  toc_levels        : [1, 2, 3, 4, 5, 6]
-  smart_quotes      : lsquo,rsquo,ldquo,rdquo
-  input             : GFM
-  hard_wrap         : false
-  footnote_nr       : 1
-  show_warnings     : false
+#kramdown:
+#  auto_ids          : true
+#  entity_output     : as_char
+#  toc_levels        : [1, 2, 3, 4, 5, 6]
+#  smart_quotes      : lsquo,rsquo,ldquo,rdquo
+#  input             : GFM
+#  hard_wrap         : false
+#  footnote_nr       : 1
+#  show_warnings     : false
 
 # Jackyll Theme
 #remote_theme: pages-themes/architect@v0.2.0
