@@ -30,7 +30,12 @@ unpublished         : false
 # Plugins
 whitelist           : []
 plugins             : 
-- jekyll-remote-theme
+  - jekyll-remote-theme
+
+remote_theme: pages-themes/slate@v0.2.0
+
+minima:
+  skin: dark
 
 # Conversion
 markdown            : kramdown
@@ -72,6 +77,5 @@ kramdown:
   show_warnings     : false
 
 # Jackyll Theme
-remote_theme: pages-themes/slate@v0.2.0
 #remote_theme: pages-themes/architect@v0.2.0
 #theme: jekyll-theme-architect
