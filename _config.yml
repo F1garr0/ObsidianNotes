@@ -72,5 +72,5 @@ kramdown:
   show_warnings     : false
 
 # Jackyll Theme
-remote_theme: pages-themes/architect@v0.2.0
+#remote_theme: pages-themes/architect@v0.2.0
 theme: jekyll-theme-architect
