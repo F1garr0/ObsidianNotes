@@ -1,5 +1,7 @@
 source "https://rubygems.org"
-gem "jekyll", "~> 3.8.2"
+gemspec
 
-gem "minima"
+gem "jekyll"
+gem "webrick", "~> 1.7"
+gem "jekyll-feed"
 gem "jekyll-remote-theme"
