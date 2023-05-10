@@ -35,7 +35,7 @@ header_pages:
 
 # Build settings
 #remote_theme: samarsault/texture
-remote_theme: cotes2020/jekyll-theme-chirpy
+remote_theme: abhinavs/moonwalk
 
 plugins:
 - jekyll-seo-tag
